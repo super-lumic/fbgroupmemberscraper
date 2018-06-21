@@ -46,8 +46,8 @@ def getmember_info():
     link = (input("Enter the MEMBERS PAGE of the FB group URL: "))
     databasename = (input("Enter databasename name: "))
     create_database(databasename)
-
-    driver = webdriver.Chrome(executable_path="/Users/clickontemp/Downloads/chromedriver")
+    chromedriver = "/Users/filename/chromedriver"
+    driver = webdriver.Chrome(executable_path=chromedriver)
 
     driver.get(link)
 
